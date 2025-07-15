@@ -1,6 +1,6 @@
 ![Welcome](./assets/images/text.gif)
 <div align="center">
-  <img src="./welcome.gif" alt="Welcome to Johyeon's Repository" width="600"/>
+  <img src="./text.gif" alt="Welcome to Johyeon's Repository" width="600"/>
 </div>
 <!--
 **JohyeonNam/JohyeonNam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
