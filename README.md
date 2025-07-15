@@ -1,7 +1,6 @@
-![header](./assets/images/text.gif)
-<p align="center">
-  <img src="./text.gif" width="600"/>
-</p>
+<div align="center">
+  <img src="./assets/images/text.gif" width="600"/>
+</div>
 <!--
 **JohyeonNam/JohyeonNam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
