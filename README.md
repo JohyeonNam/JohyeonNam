@@ -3,8 +3,9 @@
 </div>
 
 ---
+[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:j.nam.981214@gmail.com)
 Welcome to my repository! I'm a student currently studying bioinformatics.
-This repo contains code and files from the projects I've worked on.
+This repository contains code and files from the projects I've worked on.
 <!--
 **JohyeonNam/JohyeonNam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
