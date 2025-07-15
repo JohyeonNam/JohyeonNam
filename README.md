@@ -12,7 +12,7 @@ This repository contains code and files from the projects I've worked on.
 - **PD_ElecStim_Transcriptome**:  
   Codes and files used for the analysis of the article.  
   The result of this project was published:  
-  *Nam, J., Shin, H., You, C., Baeg, E., Kim, J. G., Yang, S., & Han, M. R. (2025). Cortical Stimulation-Based Transcriptome Shifts on Parkinson’s Disease Animal Model. ASN Neuro, 17(1).*  
+  *Nam, J., Shin, H., You, C., Baeg, E., Kim, J. G., Yang, S., & Han, M. R. (2025). Cortical Stimulation-Based Transcriptome Shifts on Parkinson’s Disease Animal Model. ASN Neuro, 17(1).*
   [https://doi.org/10.1080/17590914.2025.2513881](https://doi.org/10.1080/17590914.2025.2513881)
 - HGSOC_ceRNA_SingleCell:  
 - HGSOC_Recurrence_Transcriptome:  
