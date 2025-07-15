@@ -9,15 +9,15 @@ Welcome to my repository! I'm a student currently studying bioinformatics.
 This repository contains code and files from the projects I've worked on.
 ***
 ## Table of Contents  
-- **PD_ElecStim_Transcriptome**:  
+- **PD_ElecStim_Transcriptome**  
   Codes and files used for the analysis of the published article:  
   *Nam, J., Shin, H., You, C., Baeg, E., Kim, J. G., Yang, S., & Han, M. R. (2025). Cortical Stimulation-Based Transcriptome Shifts on Parkinson’s Disease Animal Model. ASN Neuro, 17(1).*  
   [https://doi.org/10.1080/17590914.2025.2513881](https://doi.org/10.1080/17590914.2025.2513881)
     
-- **HGSOC_ceRNA_SingleCell**:
+- **HGSOC_ceRNA_SingleCell**
 
     
-- **HGSOC_Recurrence_Transcriptome**:  
+- **HGSOC_Recurrence_Transcriptome**  
 ***
 <!--
 **JohyeonNam/JohyeonNam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
