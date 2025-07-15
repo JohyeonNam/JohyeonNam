@@ -9,17 +9,16 @@ Welcome to my repository! I'm a student currently studying bioinformatics.
 This repository contains code and files from the projects I've worked on.
 ***
 ## Table of Contents  
+Following directories contain codes and files used for the analysis of published articles.  
 - **PD_ElecStim_Transcriptome**  
-  Codes and files used for the analysis of the published article:  
   **Nam J**, Shin H, You C, Baeg E, Kim JG, Yang S, Han MR. Cortical stimulation-based transcriptome shifts on Parkinson’s disease animal model. *ASN Neuro*. 2025  
   [https://doi.org/10.1080/17590914.2025.2513881](https://doi.org/10.1080/17590914.2025.2513881)
-    
+
+Following directories contain codes and files used for the analysis of unpublished articles.  
 - **HGSOC_ceRNA_SingleCell**  
-  Codes and files used for the analysis of the unpublished article:  
   **Nam J**, Han MR. Single-cell RNA sequencing reveals a putative lncRNA-associated ceRNA network in HGSOC. (*Submitted for publication*)
     
 - **HGSOC_Recurrence_Transcriptome**  
-  Codes and files used for the analysis of the unpublished article:  
   Kim MA, **Nam J**, Shin HY, Kim JY, Cho H, Han MR, Kim JH. Molecular Signatures of Recurrence in Paired Primary and Recurrent High-Grade Serous Ovarian Cancer Tissues. (*Submitted for publication*)
 ***
 <!--
