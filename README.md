@@ -20,7 +20,10 @@ The following directories contain codes and files used for the analysis of unpub
     
 - **HGSOC_Recurrence_Transcriptome**  
   Kim MA, **Nam J**, Shin HY, Kim JY, Cho H, Han MR, Kim JH. Molecular Signatures of Recurrence in Paired Primary and Recurrent High-Grade Serous Ovarian Cancer Tissues. (*Submitted for publication*)
-***
+***  
+##
+This repository also includes supplementary directories that support the documentation and presentation of the project:  
+- **assets**
 <!--
 **JohyeonNam/JohyeonNam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
