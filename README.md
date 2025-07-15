@@ -1,4 +1,4 @@
-![Welcome](./assets/images/text.gif)
+![header](./assets/images/text.gif)
 <p align="center">
   <img src="./text.gif" width="600"/>
 </p>
