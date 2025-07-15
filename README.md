@@ -23,7 +23,7 @@ The following directories contain codes and files used for the analysis of unpub
 ***  
 ##
 This repository also includes supplementary directories that support the documentation and presentation of the project:  
-- **assets**
+- assets
 <!--
 **JohyeonNam/JohyeonNam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
