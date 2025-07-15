@@ -3,7 +3,7 @@
 </div>
 
 ---
-[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:j.nam.981214@gmail.com) [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/johyeon-nam-225791295) [![Twitter Badge](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x)](https://x.com/JN8076)
+[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:j.nam.981214@gmail.com) [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/johyeon-nam-225791295) [![Twitter Badge](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x)](https://x.com/JN8076)
 
 Welcome to my repository! I'm a student currently studying bioinformatics.
 This repository contains code and files from the projects I've worked on.
