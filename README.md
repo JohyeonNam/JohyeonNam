@@ -14,7 +14,7 @@ This repository contains code and files from the projects I've worked on.
   **Nam J**, Shin H, You C, Baeg E, Kim JG, Yang S, Han MR. Cortical stimulation-based transcriptome shifts on Parkinson’s disease animal model. *ASN Neuro*. 2025  
   [https://doi.org/10.1080/17590914.2025.2513881](https://doi.org/10.1080/17590914.2025.2513881)
     
-- **HGSOC_ceRNA_SingleCell**
+- **HGSOC_ceRNA_SingleCell**  
   Codes and files used for the analysis of the unpublished article:  
   **Nam J**, Han MR. Single-cell RNA sequencing reveals a putative lncRNA-associated ceRNA network in HGSOC. (*Submitted for publication*)
     
