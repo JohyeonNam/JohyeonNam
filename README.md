@@ -4,6 +4,7 @@
 
 ---
 [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:j.nam.981214@gmail.com)
+
 Welcome to my repository! I'm a student currently studying bioinformatics.
 This repository contains code and files from the projects I've worked on.
 <!--
