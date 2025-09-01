@@ -16,7 +16,7 @@ The following directories contain codes and files used for the analysis of publi
 ##
 The following directories contain codes and files used for the analysis of unpublished articles and are therefore currently empty:  
 - **HGSOC_ceRNA_SingleCell**  
-  **Nam J**, Han MR. Single-cell RNA sequencing reveals a putative lncRNA-associated ceRNA network in HGSOC. (*Submitted for publication*)
+  **Nam J**, Han MR. Single-cell RNA sequencing reveals a putative lncRNA-associated ceRNA network in HGSOC. (*Under review*)
     
 - **HGSOC_Recurrence_Transcriptome**  
   Kim MA, **Nam J**, Shin HY, Kim JY, Cho H, Han MR, Kim JH. Molecular Signatures of Recurrence in Paired Primary and Recurrent High-Grade Serous Ovarian Cancer Tissues. (*Submitted for publication*)  
