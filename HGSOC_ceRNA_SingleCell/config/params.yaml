@@ -1,0 +1,221 @@
+##### Code by J. Nam
+##### Last updated: 2025-07-17
+##### Code definition: Configuration parameters for HGSOC_ceRNA_SingleCell analysis
+
+project_name: "HGSOC_ceRNA_SingleCell"
+
+cellranger_mkref:
+  fasta_in: "/home/NJH/project/ov_lncRNA_scRNAseq/analysis_250319/reference/GRCh38.d1.vd1.fa"
+  gtf_in: "/home/NJH/project/ov_lncRNA_scRNAseq/analysis_250319/reference/gencode.v36.annotation.gtf"
+  dir_out: "/home/NJH/project/ov_lncRNA_scRNAseq/analysis_250319/reference/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "CRmkref"
+  job_limit: 1
+  partition: "gar"
+  thread: 8
+
+cellranger_count:
+  dir_in: "/home/NJH/project/ov_lncRNA_scRNAseq/analysis_250319/reference/GRCh38.d1.vd1.fa"
+  dir_out: "/data/emerald_data/OV_recurrence_WGS_severance/1.results/NJH_hg38/CellRanger_Counts/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "CRcount"
+  job_limit: 10
+  partition: "gar"
+  thread: 8
+  reference: ""
+  sample_sheet: "sample_sheet"
+
+seurat_make:
+  dir_in: "/data/emerald_data/OV_recurrence_WGS_severance/1.results/NJH_hg38/CellRanger_Counts/"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Seurat1"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  sample_sheet: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Rawdata/reference/SampleInfo.csv"
+
+quality_control:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_1.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Seurat2"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+
+normalisation:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_2.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Seurat3"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+
+seurat_sketchdata:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_3.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Seurat4"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+
+seurat_harmony:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_4.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Seurat5"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+
+seurat_cluster:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_5.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Seurat6"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+
+seurat_projection:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_6.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Seurat7"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  dim: 16
+  res: 1.1
+
+singler_annotation:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_7.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Seurat8"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+
+infercnv:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_8.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/InferCNV/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "InferCNV"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  gene_order: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/InferCNV/infercnv_gene_order.txt"
+  celltype_anno: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/Celltype_annotation_results.csv"
+
+escape:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_8.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Escape/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Escape"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+
+marker_identification:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Escape/seurat_obj_9.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "Seurat9"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  gtf_type: "GENCODE"
+  gtf_file: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Rawdata/reference/gencode.v36.annotation.gtf"
+
+hdwgcna_coexpression:
+  seurat_obj: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/seurat_obj_10.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/hdWGCNA/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "hdWGCNA"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  pcg_markers: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/pcg_markers.rds"
+  lnc_markers: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Seurat/lnc_markers.rds"
+
+predict_mirna:
+  hubgenes_table: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/hdWGCNA/hubgenes_table.rds"
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/PredTarget/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "PredMiR"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  mir_lnc: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/PredTarget/reference/miRNet-mir-lncRNA.csv"
+  mir_gene1: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/PredTarget/reference/miRNet-mir-gene-hsa-tarbase.csv"
+  mir_gene2: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/PredTarget/reference/miRNet-mir-gene-hsa-mirtarbase.csv"
+  mir_gene3: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/PredTarget/reference/miRNet-mir-gene-hsa-mirecords.csv"
+  
+visualise_prediction:
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/PredTarget/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "VisPred"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  pred_df: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/PredTarget/pred_cancer.rds"
+
+tcga_maketable:
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/TCGA_CoExp/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "TCGAtbl"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  dir_tcga: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/TCGA_Counts/"
+  sample_sheet: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Rawdata/tcga/gdc_sample_sheet.tsv"
+  clinical_sheet: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Rawdata/tcga/clinical_parsed.tsv"
+  idnametype: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/Rawdata/reference/gencode.v36.idnametype.csv"
+
+tcga_coexpression:
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/TCGA_CoExp/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "TCGAExp"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  dir_tcga: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/TCGA_Counts/"
+  pcg_count: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/TCGA_CoExp/pcg_count.rds"
+  lnc_count: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/TCGA_CoExp/lnc_count.rds"
+  miRNA_count: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/TCGA_CoExp/miRNA_count.rds"
+  pred_cancer: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/PredTarget/pred_cancer.rds"
+
+visualise_validation:
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/TCGA_CoExp/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "VisVal"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  fdr_sig: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/TCGA_CoExp/fdr_sig.rds"
+
+ora:
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/ORA/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "ORA"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  allgenes_table: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/hdWGCNA/allgenes_table.csv"
+  wgcna_obj_cancer: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/hdWGCNA/wgcna_obj_cancer.rds"
+
+plot_ora:
+  dir_out: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/ORA/"
+  dir_log: "/home/NJH/project/ov_lncRNA_scRNAseq/Logfiles/"
+  job_name: "PlotORA"
+  job_limit: 2
+  partition: "gar"
+  thread: 8
+  go_df: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/ORA/go_df.rds"
+  kegg_df: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/ORA/kegg_df.rds"
+  reactome_df: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/ORA/reactome_df.rds"
+  wiki_df: "/data2/analysis/OV_lncRNA_scRNAseq_TCGA_INU/ORA/wiki_df.rds"
