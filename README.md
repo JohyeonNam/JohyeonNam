@@ -1,4 +1,4 @@
-<div align="center">
+R<div align="center">
   <img src="./assets/text.gif" width="600"/>
 </div>
 
@@ -21,7 +21,7 @@ The following directories contain codes and files used for the analysis of publi
 The following directories contain codes and files used for the analysis of unpublished articles and are therefore currently empty:  
    
 - **HGSOC_Recurrence_Transcriptome**  
-  Kim MA, **Nam J**, Shin HY, Kim JY, Cho H, Han MR, Kim JH. Molecular Signatures of Recurrence in Paired Primary and Recurrent High-Grade Serous Ovarian Cancer Tissues. (*Submitted for publication*)  
+  Kim MA, **Nam J**, Shin HY, Kim JY, Cho H, Han MR, Kim JH. Molecular Signatures of Recurrence in Paired Primary and Recurrent High-Grade Serous Ovarian Cancer Tissues. (*Under review*)  
 ##
 This repository also includes supplementary directories that support the documentation and presentation of the project:  
 - **assets**
