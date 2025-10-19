@@ -1,4 +1,4 @@
-R<div align="center">
+<div align="center">
   <img src="./assets/text.gif" width="600"/>
 </div>
 
@@ -15,7 +15,7 @@ The following directories contain codes and files used for the analysis of publi
   [https://doi.org/10.1080/17590914.2025.2513881](https://doi.org/10.1080/17590914.2025.2513881)
 
 - **HGSOC_ceRNA_SingleCell**  
-  **Nam J**, Han MR. Single-cell RNA sequencing reveals a putative lncRNA-associated ceRNA network in HGSOC. *Genes & Genomics*. 2025
+  **Nam J**, Han MR. Single-cell RNA sequencing reveals a putative lncRNA-associated ceRNA network in HGSOC. *Genes & Genomics*. 2025  
   [https://doi.org/10.1007/s13258-025-01691-2](https://doi.org/10.1007/s13258-025-01691-2)
   
 ##
